@@ -1,0 +1,16 @@
+# Unity
+Chatting/Library/
+Chatting/Temp/
+Chatting/Obj/
+Chatting/Build/
+Chatting/Logs/
+Chatting/UserSettings/
+
+# C++ Server
+ChatServer/x64/
+ChatServer/Debug/
+ChatServer/Release/
+ChatServer/.vs/
+ChatServer/*.obj
+ChatServer/*.pdb
+ChatServer/*.ilk
