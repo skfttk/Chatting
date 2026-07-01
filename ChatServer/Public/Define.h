@@ -1,13 +1,15 @@
-#pragma once
+ï»¿#pragma once
 
 #include <iostream>
 #include <WinSock2.h>
 #include <cstdlib>
+#include <vector>
 
-#pragma comment(lib, "ws2_32.lib")  // Winsock ¶óÀÌºê·¯¸® ¸µÅ©
+#pragma comment(lib, "ws2_32.lib")  // Winsock ë¼ì´ë¸ŒëŸ¬ë¦¬ ë§í¬
 
 
 #define BUF_SIZE 1024
 #define OPSZ 4
+#define PORT 54000
 
 using namespace std;

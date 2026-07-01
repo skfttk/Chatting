@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hyen6\\Desktop\\Chatting\\Chatting\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1798C677-D86D-0974-4EAE-31FF00BB0DFA}|Assembly-CSharp.csproj|c:\\users\\hyen6\\desktop\\chatting\\chatting\\assets\\script\\tcpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1798C677-D86D-0974-4EAE-31FF00BB0DFA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\tcpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1798C677-D86D-0974-4EAE-31FF00BB0DFA}|Assembly-CSharp.csproj|C:\\Users\\hyen6\\Desktop\\Chatting\\Chatting\\assets\\script\\chathandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1798C677-D86D-0974-4EAE-31FF00BB0DFA}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\chathandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hyen6\\Desktop\\Chatting\\Chatting\\Assets\\Script\\ChatHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ChatHandler.cs",
+              "ToolTip": "C:\\Users\\hyen6\\Desktop\\Chatting\\Chatting\\Assets\\Script\\ChatHandler.cs",
+              "RelativeToolTip": "Assets\\Script\\ChatHandler.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T15:44:38.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TCPClient.cs",
+              "DocumentMoniker": "C:\\Users\\hyen6\\Desktop\\Chatting\\Chatting\\Assets\\Script\\TCPClient.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\TCPClient.cs",
+              "ToolTip": "C:\\Users\\hyen6\\Desktop\\Chatting\\Chatting\\Assets\\Script\\TCPClient.cs",
+              "RelativeToolTip": "Assets\\Script\\TCPClient.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T03:05:14.029Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

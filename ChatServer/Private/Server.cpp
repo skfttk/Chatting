@@ -2,6 +2,9 @@
 
 bool Server::Start_Server()
 {
+	SetConsoleOutputCP(CP_UTF8);
+	SetConsoleCP(CP_UTF8);
+
 	if (!Init_Sock())
 		return false;
 
@@ -91,24 +94,41 @@ bool Server::Accept_ClntSock()
 	if (m_hClntSock == INVALID_SOCKET)
 		return LogError("Can't accept a socket! Continuing...");
 
+	cout << u8"연결 성공" << '\n';
+
 	return true;
 }
 
 void Server::ProcessClinet()
 {
-	char buf[1024];
-
-	int len = recv(m_hClntSock, buf, sizeof(buf), 0);
-
-	if (len <= 0)
+	while (true)
 	{
-		closesocket(m_hClntSock);
-		return;
+		int dataLen = 0;
+
+		// 1. 길이 먼저 받기 (4바이트)
+		int recvSize = recv(m_hClntSock, (char*)&dataLen, 4, 0);
+
+		if (recvSize <= 0)
+			break;
+		// 2. 데이터 받을 버퍼 생성
+		vector<char> buffer(dataLen);
+
+		// 3. 실제 메시지 받기
+		recvSize = recv(m_hClntSock, buffer.data(), dataLen, 0);
+
+		if (recvSize <= 0)
+			break;
+
+		// 4. UTF-8 문자열로 변환
+		string msg(buffer.begin(), buffer.end());
+
+		cout << msg << endl;
+
+		// 5. 그대로 에코
+		send(m_hClntSock, buffer.data(), buffer.size(), 0);
 	}
 
-	cout << buf << endl;
-
-	send(m_hClntSock, buf, len, 0);
+	closesocket(m_hClntSock);
 }
 
 bool Server::LogError(const char* message)

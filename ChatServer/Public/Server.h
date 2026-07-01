@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "Define.h"
 
@@ -27,6 +27,6 @@ private:
 	int			m_iresult, m_iopndCnt;
 	int			m_irecvCnt, m_irecvLen;
 	int			m_iClntAdrSize;
-	int			m_iPort = 54000;
+	int			m_iPort = PORT;
 };
 
