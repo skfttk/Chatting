@@ -23,10 +23,8 @@ private:
 	SOCKET		m_hClntSock;
 	SOCKADDR_IN	m_ServAdr;
 	SOCKADDR_IN	m_ClntAdr;
-	char		m_cOpinfo[BUF_SIZE];
 	int			m_iresult, m_iopndCnt;
 	int			m_irecvCnt, m_irecvLen;
 	int			m_iClntAdrSize;
-	int			m_iPort = PORT;
 };
 

@@ -44,6 +44,9 @@ public class ChatHandler : MonoBehaviour
             }
         }
 
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+            Force_Close();
+
         if (m_Client != null && m_Client.HasData())
         {
             string msg = m_Client.Receive();
@@ -68,20 +71,19 @@ public class ChatHandler : MonoBehaviour
         m_InputField.gameObject.SetActive(false);
     }
 
-    private void TextBox()
-    {
-        GameObject TextBox = GetPool();
-        TMP_Text text = TextBox.GetComponent<TMP_Text>();
-        text.text = m_Client.Receive();
-        TextBox.transform.SetParent(m_ContenRect, false);
-    }
-
     private void AddChat(string msg)
     {
         GameObject obj = GetPool();
         TMP_Text text = obj.GetComponent<TMP_Text>();
         text.text = msg;
         obj.transform.SetParent(m_ContenRect, false);
+    }
+
+    private void Force_Close()
+    {
+        m_InputField.text = "";
+        m_IsEnter = false;
+        m_InputField.gameObject.SetActive(false);
     }
 
     private void Create_Pool()
